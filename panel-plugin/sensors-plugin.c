@@ -778,7 +778,7 @@ sensors_set_text_panel_label (t_sensors *ptr_sensors, gint numCols, gint num_ite
 
             if (ptr_chipfeature->show == TRUE) {
                 if(ptr_sensors->show_labels == TRUE) {
-                  tmpstring = g_strconcat (myLabelText, "<span size=\"", ptr_sensors->str_fontsize, "\">",ptr_chipfeature->name, NULL);
+                  tmpstring = g_strconcat (myLabelText, "<span foreground=\"#FFFFFF\" size=\"", ptr_sensors->str_fontsize, "\">",ptr_chipfeature->name, NULL);
 
                   g_free(myLabelText);
                   myLabelText = g_strconcat (tmpstring, ":</span> ", NULL);
